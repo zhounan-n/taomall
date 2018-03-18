@@ -29,6 +29,7 @@ public class ItemController {
 
 
     @RequestMapping(value = "/item/list")
+    @ResponseBody
     public ListResult listItems(@RequestParam(defaultValue = "1") Integer page, @RequestParam(defaultValue = "10") Integer rows) {
         ListResult result = itemService.listItem(page, rows);
         return result;
