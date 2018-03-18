@@ -6,12 +6,7 @@
 
     <display-name>taomall-manage</display-name>
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-        <welcome-file>index.htm</welcome-file>
         <welcome-file>index.jsp</welcome-file>
-        <welcome-file>default.html</welcome-file>
-        <welcome-file>default.htm</welcome-file>
-        <welcome-file>default.jsp</welcome-file>
     </welcome-file-list>
 
     <!-- 加载spring容器 -->
@@ -54,5 +49,22 @@
         <servlet-name>spring</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jpg</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.png</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.ico</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
