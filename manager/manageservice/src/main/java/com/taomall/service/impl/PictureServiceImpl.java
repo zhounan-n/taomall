@@ -1,5 +1,6 @@
-package com.taomall.service;
+package com.taomall.service.impl;
 
+import com.taomall.service.PictrueServie;
 import com.taomall.utils.FtpUtil;
 import com.taomall.utils.IDUtils;
 import org.joda.time.DateTime;
