@@ -3,6 +3,7 @@ package com.taomall.mapper;
 import com.taomall.entities.TbItemParamItem;
 import com.taomall.entities.TbItemParamItemExample;
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TbItemParamItemMapper {

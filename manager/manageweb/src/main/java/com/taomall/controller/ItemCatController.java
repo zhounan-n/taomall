@@ -1,6 +1,6 @@
 package com.taomall.controller;
 
-import com.taomall.entities.EuTreeNode;
+import com.taomall.common.entities.EuTreeNode;
 import com.taomall.service.ItemCatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

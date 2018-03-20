@@ -1,6 +1,6 @@
 package com.taomall.controller;
 
-import com.taomall.entities.TaotaoResult;
+import com.taomall.common.entities.TaotaoResult;
 import com.taomall.entities.TbItemParam;
 import com.taomall.service.ItemParamService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,8 +1,8 @@
 package com.taomall.service.impl;
 
 import com.taomall.service.PictrueServie;
-import com.taomall.utils.FtpUtil;
-import com.taomall.utils.IDUtils;
+import com.taomall.common.utils.FtpUtil;
+import com.taomall.common.utils.IDUtils;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

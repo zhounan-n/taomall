@@ -1,7 +1,6 @@
 package com.taomall.service;
 
-import com.taomall.entities.EuTreeNode;
-import com.taomall.entities.TbItemCat;
+import com.taomall.common.entities.EuTreeNode;
 
 import java.util.List;
 

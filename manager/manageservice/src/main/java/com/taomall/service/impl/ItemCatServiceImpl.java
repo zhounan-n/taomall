@@ -1,6 +1,6 @@
 package com.taomall.service.impl;
 
-import com.taomall.entities.EuTreeNode;
+import com.taomall.common.entities.EuTreeNode;
 import com.taomall.entities.TbItemCat;
 import com.taomall.entities.TbItemCatExample;
 import com.taomall.mapper.TbItemCatMapper;

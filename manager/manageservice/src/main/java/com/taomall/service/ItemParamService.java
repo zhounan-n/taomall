@@ -1,6 +1,6 @@
 package com.taomall.service;
 
-import com.taomall.entities.TaotaoResult;
+import com.taomall.common.entities.TaotaoResult;
 import com.taomall.entities.TbItemParam;
 
 /**

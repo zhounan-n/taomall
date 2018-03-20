@@ -1,7 +1,7 @@
 package com.taomall.controller;
 
-import com.taomall.entities.ListResult;
-import com.taomall.entities.TaotaoResult;
+import com.taomall.common.entities.ListResult;
+import com.taomall.common.entities.TaotaoResult;
 import com.taomall.entities.TbItem;
 import com.taomall.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;

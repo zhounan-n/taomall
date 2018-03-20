@@ -1,9 +1,10 @@
 package com.taomall.service.impl;
 
-import com.taomall.entities.*;
 import com.taomall.mapper.TbItemParamItemMapper;
+import com.taomall.entities.TbItemParamItem;
+import com.taomall.entities.TbItemParamItemExample;
 import com.taomall.service.ItemParamItemService;
-import com.taomall.utils.JsonUtils;
+import com.taomall.common.utils.JsonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.Map;
  * Created by zhoun on 2018/3/20.
  **/
 @Service
-public class ItemParamItemServiceImpl implements ItemParamItemService{
+public class ItemParamItemServiceImpl implements ItemParamItemService {
 
     @Autowired
     private TbItemParamItemMapper itemParamItemMapper;

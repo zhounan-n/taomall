@@ -3,6 +3,7 @@ package com.taomall.mapper;
 import com.taomall.entities.TbContentCategory;
 import com.taomall.entities.TbContentCategoryExample;
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TbContentCategoryMapper {

@@ -2,12 +2,17 @@ package com.taomall.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.taomall.common.entities.ListResult;
+import com.taomall.common.entities.TaotaoResult;
 import com.taomall.entities.*;
 import com.taomall.mapper.TbItemDescMapper;
 import com.taomall.mapper.TbItemMapper;
 import com.taomall.mapper.TbItemParamItemMapper;
+import com.taomall.entities.TbItem;
+import com.taomall.entities.TbItemExample;
+import com.taomall.entities.TbItemParamItem;
 import com.taomall.service.ItemService;
-import com.taomall.utils.IDUtils;
+import com.taomall.common.utils.IDUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
