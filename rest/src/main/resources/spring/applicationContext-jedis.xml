@@ -8,7 +8,6 @@
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
-    <context:property-placeholder location="classpath:redis.properties" />
     <!-- 连接池配置 -->
     <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
         <!-- 最大连接数 -->
@@ -75,11 +74,12 @@
         <constructor-arg index="1" name="connectionTimeout" value="${redis.timeout}"/>
         <!--设置网络通信超时时间 -->
         <constructor-arg index="2" name="soTimeout" value="${redis.soTimeout}"/>
-        <constructor-arg index="4" name="password" value="${redis.password}"/>
         <!--设置最大重试次数 -->
         <constructor-arg index="3"  name="maxAttempts" value="${redis.attempts}"/>
-        <constructor-arg index="5"  name="poolConfig" ref="jedisPoolConfig"/>
         <!--设置集群访问密码 -->
+        <constructor-arg index="4" name="password" value="${redis.password}"/>
+        <constructor-arg index="5"  name="poolConfig" ref="jedisPoolConfig"/>
+
     </bean>
     <bean id="jedisClientCluster" class="com.taomall.rest.dao.impl.JedisClientCluster"></bean>
 </beans>
