@@ -1,8 +1,8 @@
 package com.taomall.sso.dao.impl;
 
+import com.taomall.sso.dao.JedisClient;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.taotao.sso.dao.JedisClient;
 
 import redis.clients.jedis.JedisCluster;
 

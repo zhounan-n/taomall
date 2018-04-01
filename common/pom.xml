@@ -10,10 +10,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>common</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>../sso</module>
-    </modules>
+    <packaging>jar</packaging>
+
 
     <dependencies>
         <dependency>

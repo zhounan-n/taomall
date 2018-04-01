@@ -29,7 +29,7 @@ import org.springframework.util.DigestUtils;
 public class UserServiceImpl implements UserService {
 
 	@Autowired
-	private TbUserMapper userMapper;
+	private TbUserMapper tbUserMapper;
 	
 	@Autowired
 	private JedisClient jedisClient;
@@ -56,7 +56,7 @@ public class UserServiceImpl implements UserService {
 			criteria.andEmailEqualTo(content);
 		}
 		//执行查询
-		List<TbUser> list = userMapper.selectByExample(example);
+		List<TbUser> list = tbUserMapper.selectByExample(example);
 		if (list == null || list.size() == 0) {
 			return TaotaoResult.ok(true);
 		}
@@ -69,7 +69,7 @@ public class UserServiceImpl implements UserService {
 		user.setCreated(new Date());
 		//md5加密
 		user.setPassword(DigestUtils.md5DigestAsHex(user.getPassword().getBytes()));
-		userMapper.insert(user);
+		tbUserMapper.insert(user);
 		return TaotaoResult.ok();
 	}
 
@@ -83,7 +83,7 @@ public class UserServiceImpl implements UserService {
 		TbUserExample example = new TbUserExample();
 		TbUserExample.Criteria criteria = example.createCriteria();
 		criteria.andUsernameEqualTo(username);
-		List<TbUser> list = userMapper.selectByExample(example);
+		List<TbUser> list = tbUserMapper.selectByExample(example);
 		//如果没有此用户名
 		if (null == list || list.size() == 0) {
 			return TaotaoResult.build(400, "用户名或密码错误");
