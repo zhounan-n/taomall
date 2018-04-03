@@ -90,10 +90,10 @@
             </dependency>
             <!-- httpclient -->
             <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpclient</artifactId>
-                <version>${httpclient.version}</version>
-            </dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
             <!-- 单元测试 -->
             <dependency>
                 <groupId>junit</groupId>
